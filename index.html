@@ -3,69 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>Brawl Stars Minigames</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
+            font-family: Arial, sans-serif; /* Use a sans-serif font */
+            text-align: center; /* Center all inline content within the body */
+            background-color: #f1f1f1; /* Light background */
         }
 
         header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end; /* Align right header to the right */
             align-items: center;
             padding: 10px 20px;
-            background-color: #333;
-            color: white;
+            background-color: #fff; /* White header background */
+            color: #333; /* Dark text for readability */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for better separation */
         }
 
         .right-header {
             display: flex;
+            flex-direction: column; /* Stack items vertically */
             align-items: center;
+            justify-content: center;
         }
 
-        .right-header span {
-            margin-right: 10px;
+        .right-header a {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center icon and text */
+            text-decoration: none;
+            color: #333;
         }
 
         .discord-icon {
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 30px;
+            margin-bottom: 5px; /* Space between icon and text */
         }
 
         h1 {
             margin-top: 50px;
-            font-size: 48px;
-            color: #333;
+            font-size: 52px; /* Larger font size */
+            color: white; /* White text */
+            font-family: 'Arial Rounded MT Bold', sans-serif; /* More rounded font */
+            text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000; /* Bigger black shadow for the text */
         }
 
-        a {
-            color: white;
-            text-decoration: none;
+        .description {
+            margin-top: 20px; /* Space above the description */
+            font-size: 18px; /* Font size for description */
+            color: #333; /* Dark color for description */
+            padding: 0 20px; /* Padding for better text spacing */
+            max-width: 800px; /* Max width for readability */
+            line-height: 1.6; /* Improved line spacing */
+            margin-left: auto; /* Center alignment */
+            margin-right: auto; /* Center alignment */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Optional hover effect */
+        }
+
+        .our-dc {
+            font-size: 14px;
+            color: #333; /* Dark color for the "Our Discord" text */
         }
     </style>
 </head>
 <body>
 
     <header>
-        <!-- Left side: Icon -->
-        <div class="left-header">
-            <span>YOUR ICON TEXT IN MIDDLE</span> <!-- Replace with your desired text -->
-        </div>
-
-        <!-- Right side: Text and Discord Icon -->
+        <!-- Right side: Discord Icon and Text -->
         <div class="right-header">
-            <span>YOUR TEXT</span>
-            <a href="https://discord.com" target="_blank">
+            <!-- Wrap both the image and text in the same anchor tag -->
+            <a href="https://discord.gg/uKTTCqDnBU" target="_blank">
                 <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord" class="discord-icon">
+                <span class="our-dc">Our Discord</span>
             </a>
         </div>
     </header>
 
     <!-- Main content -->
-    <h1>WELCOME TO NAME?</h1>
+    <h1 class="welcome-title">WELCOME TO BRAWL STARS FUN ZONE!</h1>
+
+    <!-- Description section -->
+    <p class="description">
+text 
+    </p>
 
 </body>
 </html>
