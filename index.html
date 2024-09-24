@@ -19,20 +19,14 @@
             padding: 10px 20px;
             background-color: #333;
             color: white;
-            position: relative;
         }
 
-        .center-header {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
+        .right-header {
             display: flex;
             align-items: center;
         }
 
-        .center-header img {
-            width: 40px;
-            height: 40px;
+        .right-header span {
             margin-right: 10px;
         }
 
@@ -56,14 +50,18 @@
 <body>
 
     <header>
-        <div class="center-header">
-            <img src="your-icon.png" alt="Icon">
-            <span>YOUR TEXT HERE</span>
+        <!-- Left side: Icon -->
+        <div class="left-header">
+            <span>YOUR ICON TEXT IN MIDDLE</span> <!-- Replace with your desired text -->
         </div>
 
-        <a href="https://discord.com" target="_blank">
-            <img src="discord-icon.png" alt="Discord" class="discord-icon">
-        </a>
+        <!-- Right side: Text and Discord Icon -->
+        <div class="right-header">
+            <span>YOUR TEXT</span>
+            <a href="https://discord.com" target="_blank">
+                <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord" class="discord-icon">
+            </a>
+        </div>
     </header>
 
     <!-- Main content -->
@@ -71,4 +69,3 @@
 
 </body>
 </html>
-
