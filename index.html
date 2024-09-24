@@ -3,28 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brawl Stars Minigames</title>
+    <title>Brawl Stars Fun Zone</title>
+    <link rel="icon" href="bsicon.jpg" type="image/jpeg">
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif; /* Use a sans-serif font */
-            text-align: center; /* Center all inline content within the body */
-            background-color: #f1f1f1; /* Light background */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #313338;
+            color: #f1f1f1;
         }
 
         header {
             display: flex;
-            justify-content: flex-end; /* Align right header to the right */
+            justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
-            background-color: #fff; /* White header background */
-            color: #333; /* Dark text for readability */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for better separation */
+            background-color: #444;
+            color: #f1f1f1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 32px;
+            font-family: 'Arial Rounded MT Bold', sans-serif;
+            color: rgb(255, 170, 60);
+            letter-spacing: 0.1px;
+            font-weight: 500;
         }
 
         .right-header {
             display: flex;
-            flex-direction: column; /* Stack items vertically */
+            flex-direction: column;
             align-items: center;
             justify-content: center;
         }
@@ -32,60 +42,67 @@
         .right-header a {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center icon and text */
+            align-items: center;
             text-decoration: none;
-            color: #333;
+            color: #f1f1f1;
         }
 
         .discord-icon {
             width: 35px;
             height: 30px;
-            margin-bottom: 5px; /* Space between icon and text */
+            margin-bottom: 5px;
         }
 
         h1 {
             margin-top: 50px;
-            font-size: 52px; /* Default larger font size */
-            color: white; /* White text */
-            font-family: 'Arial Rounded MT Bold', sans-serif; /* More rounded font */
-            text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000; /* Bigger black shadow for the text */
+            font-size: 52px;
+            color: white;
+            font-family: 'Arial Rounded MT Bold', sans-serif;
+            text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
         }
 
         .description {
-            margin-top: 20px; /* Space above the description */
-            font-size: 18px; /* Font size for description */
-            color: #333; /* Dark color for description */
-            padding: 0 20px; /* Padding for better text spacing */
-            max-width: 800px; /* Max width for readability */
-            line-height: 1.6; /* Improved line spacing */
-            margin-left: auto; /* Center alignment */
-            margin-right: auto; /* Center alignment */
+            margin-top: 20px;
+            font-size: 18px;
+            color: #f1f1f1;
+            padding: 0 20px;
+            max-width: 800px;
+            line-height: 1.6;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         a:hover {
-            text-decoration: underline; /* Optional hover effect */
+            text-decoration: underline;
         }
 
         .our-dc {
             font-size: 14px;
-            color: #333; /* Dark color for the "Our Discord" text */
+            color: #f1f1f1;
         }
 
-        /* Media query for smaller screens */
         @media (max-width: 768px) {
             h1 {
-                font-size: 36px; /* Smaller font size for mobile */
-                margin-top: 30px; /* Adjust margin for mobile */
+                font-size: 36px;
+                margin-top: 30px;
             }
 
             .description {
-                font-size: 16px; /* Smaller font size for description */
+                font-size: 16px;
+            }
+
+            .logo {
+                font-size: 20px;
             }
         }
 
         @media (max-width: 480px) {
             h1 {
-                font-size: 28px; /* Further reduce font size for very small screens */
+                font-size: 28px;
+            }
+
+            .logo {
+                font-size: 18px;
             }
         }
     </style>
@@ -93,9 +110,10 @@
 <body>
 
     <header>
-        <!-- Right side: Discord Icon and Text -->
+        <a href="https://smazkajsi.github.io/bsminigamestest/" style="color:rgb(255, 170, 60); text-decoration: none;">
+            <div class="logo">Brawl Stars Fun Zone</div>
+        </a>
         <div class="right-header">
-            <!-- Wrap both the image and text in the same anchor tag -->
             <a href="https://discord.gg/uKTTCqDnBU" target="_blank">
                 <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord" class="discord-icon">
                 <span class="our-dc">Our Discord</span>
@@ -103,12 +121,12 @@
         </div>
     </header>
 
-    <!-- Main content -->
     <h1 class="welcome-title">WELCOME TO BRAWL STARS FUN ZONE!</h1>
 
-    <!-- Description section -->
     <p class="description">
-text
+        This website is dedicated to all the Brawl Stars enthusiasts out there!
+        Here you can find various minigames, tips, and tricks to enhance your gaming experience.
+        <a href="https://discord.gg/uKTTCqDnBU" target="_blank" style="color: #f1f1f1; text-decoration: underline;">Join</a> our Discord community for more fun and interaction with fellow players!
     </p>
 
 </body>
